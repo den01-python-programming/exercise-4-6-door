@@ -1,6 +1,10 @@
 import pytest
-import src.exercise
+from src import door
 
-def test_exercise():
-    #implement tests here
-    assert 0 == 0
+def test_exercise(capsys):
+    alexander = door.Door()
+
+    print(alexander.knock)
+
+    out, err = capsys.readouterr()
+    assert out == "Who's there?\n"

@@ -7,8 +7,8 @@ The door should work as follows.
 ```python
 alexander = Door()
 
-alexander.knock()
-alexander.knock()
+print(alexander.knock)
+print(alexander.knock)
 ```
 
 ```plaintext
